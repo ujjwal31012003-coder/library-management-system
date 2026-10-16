@@ -1,0 +1,402 @@
+/* ========================================
+   GLOBAL STYLES
+======================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+  color: #333;
+}
+
+button {
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+}
+
+
+/* ========================================
+   LOGIN PAGE
+======================================== */
+
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #2563eb, #1e3a8a);
+}
+
+.login-box {
+  width: 400px;
+  padding: 40px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.login-box h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #1f2937;
+}
+
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.login-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-box label {
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.login-box input {
+  padding: 12px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.login-box input:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.login-box button {
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.login-box button:hover {
+  background: #1d4ed8;
+}
+
+
+/* ========================================
+   DASHBOARD
+======================================== */
+
+.dashboard {
+  min-height: 100vh;
+  background: #f4f6f9;
+}
+
+
+/* Dashboard Header */
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #1f2937;
+  color: white;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+  font-size: 26px;
+}
+
+
+/* Logout Button */
+
+.logout-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background: #dc3545;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.logout-button:hover {
+  background: #b02a37;
+}
+
+
+/* Dashboard Content */
+
+.dashboard-content {
+  padding: 40px;
+}
+
+.dashboard-content h2 {
+  margin: 0 0 8px 0;
+  font-size: 30px;
+  color: #1f2937;
+}
+
+.dashboard-content > p {
+  margin-top: 0;
+  color: #666;
+  font-size: 16px;
+}
+
+
+/* Dashboard Cards */
+
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.dashboard-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.dashboard-card h3 {
+  margin-top: 0;
+  font-size: 22px;
+  color: #1f2937;
+}
+
+.dashboard-card p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+
+/* Dashboard Card Buttons */
+
+.dashboard-card button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.dashboard-card button:hover {
+  background: #1d4ed8;
+}
+
+
+/* ========================================
+   COMMON PAGE STYLES
+======================================== */
+
+.page-container {
+  min-height: 100vh;
+  padding: 30px 40px;
+  background: #f4f6f9;
+}
+
+.page-container h1 {
+  color: #1f2937;
+}
+
+
+/* Back to Dashboard Button */
+
+.back-button {
+  padding: 10px 18px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 6px;
+  background: #6b7280;
+  color: white;
+  font-size: 14px;
+}
+
+.back-button:hover {
+  background: #4b5563;
+}
+
+
+/* ========================================
+   FORM STYLES
+======================================== */
+
+form {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  margin-top: 20px;
+  max-width: 500px;
+}
+
+form h2 {
+  margin-top: 0;
+  color: #1f2937;
+}
+
+form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+form input:focus,
+form select:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+form button {
+  padding: 10px 18px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  font-size: 14px;
+}
+
+form button:hover {
+  background: #1d4ed8;
+}
+
+
+/* ========================================
+   TABLE STYLES
+======================================== */
+
+table {
+  width: 100%;
+  margin-top: 25px;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+table th {
+  padding: 14px;
+  background: #1f2937;
+  color: white;
+  text-align: left;
+}
+
+table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+table tr:hover {
+  background: #f8f9fa;
+}
+
+
+/* ========================================
+   TABLE BUTTONS
+======================================== */
+
+table button {
+  padding: 7px 12px;
+  margin-right: 6px;
+  border: none;
+  border-radius: 5px;
+  background: #2563eb;
+  color: white;
+  font-size: 13px;
+}
+
+table button:hover {
+  background: #1d4ed8;
+}
+
+
+/* Delete Buttons */
+
+table button:last-child {
+  background: #dc3545;
+}
+
+table button:last-child:hover {
+  background: #b02a37;
+}
+
+
+/* ========================================
+   BOOK ISSUE STATUS
+======================================== */
+
+.status-issued {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+.status-returned {
+  color: #198754;
+  font-weight: bold;
+}
+
+
+/* ========================================
+   RESPONSIVE DESIGN
+======================================== */
+
+@media (max-width: 768px) {
+
+  .dashboard-header {
+    padding: 15px 20px;
+  }
+
+  .dashboard-header h1 {
+    font-size: 20px;
+  }
+
+  .dashboard-content {
+    padding: 25px 20px;
+  }
+
+  .dashboard-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .login-box {
+    width: 90%;
+    padding: 30px;
+  }
+
+  table {
+    font-size: 13px;
+  }
+
+  table th,
+  table td {
+    padding: 8px;
+  }
+}
